@@ -6,6 +6,6 @@ export default {
   // publicPath: "/build/",
   // serverBuildPath: "build/index.js",
   serverDependenciesToBundle: [
-    "remix-i18next", // https://github.com/sergiodxa/remix-i18next/issues/143
+    "remix-i18next", // FIXME: https://github.com/sergiodxa/remix-i18next/issues/143
   ],
 };
