@@ -1,16 +1,38 @@
-# Fresh project
+# Welcome to Remix!
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+- [Remix Docs](https://remix.run/docs)
 
-### Usage
+## Development
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+From your terminal:
 
-Then start the project:
-
-```
-deno task start
+```sh
+npm run dev
 ```
 
-This will watch the project directory and restart as necessary.
+This starts your app in development mode, rebuilding assets on file changes.
+
+## Deployment
+
+First, build your app for production:
+
+```sh
+npm run build
+```
+
+Then run the app in production mode:
+
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `remix build`
+
+- `build/`
+- `public/build/`
