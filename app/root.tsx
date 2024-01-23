@@ -14,6 +14,8 @@ import i18nextServer from "./i18next.server";
 import { useTranslation } from "react-i18next";
 import { Namespace } from "./i18n";
 import { useChangeLanguage } from "remix-i18next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import PokemonCardProvider from "store/pokemonCardProvider";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -21,7 +23,7 @@ export const links: LinksFunction = () => [
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const locale = await i18nextServer.getLocale(request);
-  return json({ locale });
+  return json({ locale, ENV: process.env });
 }
 
 export const handle = {
@@ -34,7 +36,7 @@ export const handle = {
 
 export default function App() {
   // Get the locale from the loader
-  const { locale } = useLoaderData<typeof loader>();
+  const { locale, ENV } = useLoaderData<typeof loader>();
 
   const { i18n } = useTranslation();
 
@@ -43,6 +45,8 @@ export default function App() {
   // language, this locale will change and i18next will load the correct
   // translation files
   useChangeLanguage(locale);
+
+  const client = new QueryClient();
 
   return (
     <html lang={locale} dir={i18n.dir()}>
@@ -53,10 +57,21 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.ENV = ${JSON.stringify(
+              ENV
+            )}`,
+          }}
+        />
+        <QueryClientProvider client={client}>
+          <PokemonCardProvider>
+            <Outlet />
+            <ScrollRestoration />
+            <Scripts />
+            <LiveReload />
+          </PokemonCardProvider>
+        </QueryClientProvider>
       </body>
     </html>
   );
