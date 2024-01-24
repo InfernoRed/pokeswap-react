@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Pixer;
+    src: url('fonts/Pixer-Regular.eot') format('embedded-opentype'),
+    url('fonts/Pixer-Regular.woff2') format('woff2'), url('fonts/Pixer-Regular.woff') format('woff'), url('fonts/Pixer-Regular.ttf') format('truetype');
+}
+
+:root {
+    --dark-red: #8b0000;
+    --red: #c00d0d;
+    --irt-red: #b11a20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#pokedex {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--irt-red);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+div#bar
+{
+    width: 100%;
+    height: 85px;
+    background-color: var(--dark-red);
+    padding: 15px 0 0 15px;
+
+    box-shadow: -10px 9px #5e0000;
+    -webkit-box-shadow: -10px 9px #5e0000;
+    -moz-box-shadow: -10px 9px #5e0000;
+    -o-box-shadow: -10px 9px #5e0000;
+}
+
+div#buttonGlass
+{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 5px solid #fff;
+    float: left;
+
+    box-shadow: 0 0 10px #490000;
+    -webkit-box-shadow: 0 0 10px #490000;
+    -moz-box-shadow: 0 0 10px #490000;
+    -o-box-shadow: 0 0 10px #490000;
+
+    background: radial-gradient(#05fbfb, #29abe3);
+    background: -webkit-radial-gradient(#05fbfb, #29abe3);
+    background: -moz-radial-gradient(#05fbfb, #29abe3);
+    background: -o-radial-gradient(#05fbfb, #29abe3);
+
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+div#reflect
+{
+    width: 30px;
+    height: 18px;
+    margin: 3px 0 0 15px;
+    background: #fff;
+    opacity: 0.6;
+
+    border-radius: 15px 9px;
+    -webkit-border-radius: 15px 9px;
+    -moz-border-radius: 15px 9px;
+    -o-border-radius: 15px 9px;
+}
+
+div#miniButtonGlass1
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+
+    box-shadow: 0 0 10px #490000;
+    -webkit-box-shadow: 0 0 10px #490000;
+    -moz-box-shadow: 0 0 10px #490000;
+    -o-box-shadow: 0 0 10px #490000;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    background: radial-gradient(#fb7b7b, #fb0505);
+    background: -webkit-radial-gradient(#fb7b7b, #fb0505);
+    background: -moz-radial-gradient(#fb7b7b, #fb0505);
+    background: -o-radial-gradient(#fb7b7b, #fb0505);
+}
+
+div#miniButtonGlass2
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+
+    box-shadow: 0 0 10px #490000;
+    -webkit-box-shadow: 0 0 10px #490000;
+    -moz-box-shadow: 0 0 10px #490000;
+    -o-box-shadow: 0 0 10px #490000;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    background: radial-gradient(#fbfb9b, #fbfb05);
+    background: -webkit-radial-gradient(#fbfb9b, #fbfb05);
+    background: -moz-radial-gradient(#fbfb9b, #fbfb05);
+    background: -o-radial-gradient(#fbfb9b, #fbfb05);
+}
+
+div#miniButtonGlass3
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+
+    box-shadow: 0 0 10px #490000;
+    -webkit-box-shadow: 0 0 10px #490000;
+    -moz-box-shadow: 0 0 10px #490000;
+    -o-box-shadow: 0 0 10px #490000;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    background: radial-gradient(#b0fb7b, #50fb05);
+    background: -webkit-radial-gradient(#b0fb7b, #50fb05);
+    background: -moz-radial-gradient(#b0fb7b, #50fb05);
+    background: -o-radial-gradient(#b0fb7b, #50fb05);
+}
+
+div#screen
+{
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    padding: 40px 40px;
+    background-color: #b0b0b0;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}

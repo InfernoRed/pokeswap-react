@@ -18,9 +18,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import PokemonCardProvider from "store/pokemonCardProvider";
 
 import stylesheet from "./tailwind.css";
+import pokedexStylesheet from "./pokedex.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: pokedexStylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
