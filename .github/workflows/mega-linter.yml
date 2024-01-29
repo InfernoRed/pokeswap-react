@@ -57,7 +57,7 @@ jobs:
         # More info at https://megalinter.io/latest/flavors/
         uses: oxsecurity/megalinter/flavors/javascript@688bc7466d7ab4faa83d614c2e6f9acf42b674dc # v7.8.0
 
-        id: ml
+        id: megalint
 
         # All available variables are described in documentation
         # https://megalinter.io/latest/config-file/
@@ -77,7 +77,7 @@ jobs:
       - name: Prepare Commit
         id: prepare_commit
         if: |
-          steps.ml.outputs.has_updated_sources == 1 &&
+          steps.megalint.outputs.has_updated_sources == 1 &&
           (
             env.APPLY_FIXES_EVENT == 'all' ||
             env.APPLY_FIXES_EVENT == github.event_name
