@@ -1,8 +1,17 @@
-# Welcome to Remix!
+![][pokeswap-logo]
 
-- [Remix Docs](https://remix.run/docs)
+# Welcome to PokeSwap in React!
 
-## Development
+A fun example of a localized application using the Pokemon API to allow a user to compare prices of Pokemon Cards.
+
+## 🧱 Architecture
+This applications uses the following stack
+- [React][react] 
+- [Remix][remix-docs]
+- [i18next]
+- [react-i18next]
+
+## 💻 Development
 
 From your terminal:
 
@@ -12,7 +21,7 @@ npm run dev
 
 This starts your app in development mode, rebuilding assets on file changes.
 
-## Deployment
+## 🚀 Deployment
 
 First, build your app for production:
 
@@ -26,13 +35,9 @@ Then run the app in production mode:
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+<!--LINKS-->
+[react]:https://react.dev/ 
+[remix-docs]: https://remix.run/docs
+[i18next]:https://www.i18next.com/
+[react-i18next]:https://react.i18next.com/
+[pokeswap-logo]: docs/images/pokeswap-logo.png
