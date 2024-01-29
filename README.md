@@ -2,7 +2,7 @@
 
 # Welcome to PokeSwap in React!
 
-A fun example of a localized application using the Pokemon API to allow a user to compare prices of Pokemon Cards.
+A fun example of a localized application using the [Pokemon API][pokemon-api] to allow a user to compare prices of Pokemon Cards.
 
 ## 🧱 Architecture
 This applications uses the following stack
@@ -10,6 +10,8 @@ This applications uses the following stack
 - [Remix][remix-docs]
 - [i18next]
 - [react-i18next]
+- [Pokemon TCG SDK (Typescript)][pokemon-tcg-sdk-typescript]
+
 
 ## 💻 Development
 
@@ -41,3 +43,5 @@ npm start
 [i18next]:https://www.i18next.com/
 [react-i18next]:https://react.i18next.com/
 [pokeswap-logo]: docs/images/pokeswap-logo.png
+[pokemon-api]:https://pokemontcg.io/
+[pokemon-tcg-sdk-typescript]: https://github.com/PokemonTCG/pokemon-tcg-sdk-typescript
