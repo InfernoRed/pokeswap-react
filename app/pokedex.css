@@ -146,10 +146,10 @@ div#miniButtonGlass3
 
 div#screen
 {
-    height: 80%;
+    height: 70%;
     width: 80%;
     align-self: center;
-    padding: 40px 40px;
+    padding: 24px;
     background-color: #b0b0b0;
 
     border-radius: 15px;
