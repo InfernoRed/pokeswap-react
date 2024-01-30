@@ -1,6 +1,6 @@
 # ![PokeSwap Logo][pokeswap-logo]
 
-# Welcome to PokeSwap in React
+## 👋 Welcome to PokeSwap in React
 
 A fun example of a localized application using the [Pokemon API][pokemon-api] to allow a user to compare prices of Pokemon Cards.
 
