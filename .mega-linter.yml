@@ -29,6 +29,8 @@ PRINT_ALPACA: false
 
 TYPESCRIPT_DEFAULT_STYLE: prettier
 
+JSON_JSONLINT_FILTER_REGEX_EXCLUDE: "tsconfig.json"
+
 PRE_COMMANDS:
   - command: npm install --production=false
     cwd: "workspace"
