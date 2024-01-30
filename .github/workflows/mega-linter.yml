@@ -4,7 +4,6 @@
 name: MegaLinter
 
 on:
-  push:
   pull_request:
     branches:
       - main
@@ -33,7 +32,7 @@ permissions: read-all
 
 jobs:
   megalinter:
-    name: MegaLinter
+    name: Lint
     runs-on: ubuntu-latest
 
     permissions:
