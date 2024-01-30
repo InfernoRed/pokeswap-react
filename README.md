@@ -1,4 +1,4 @@
-![][pokeswap-logo]
+# ![PokeSwap Logo][pokeswap-logo]
 
 # Welcome to PokeSwap in React
 
