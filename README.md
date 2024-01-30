@@ -1,5 +1,7 @@
 # ![PokeSwap Logo][pokeswap-logo]
 
+[![MegaLinter][megalint-badge]][megalint-workflow]
+
 ## 👋 Welcome to PokeSwap in React
 
 A fun example of a localized application using the [Pokemon API][pokemon-api] to allow a user to compare prices of Pokemon Cards.
@@ -45,3 +47,5 @@ npm start
 [pokeswap-logo]: docs/images/pokeswap-logo.png
 [pokemon-api]:https://pokemontcg.io/
 [pokemon-tcg-sdk-typescript]: https://github.com/PokemonTCG/pokemon-tcg-sdk-typescript
+[megalint-badge]: https://github.com/InfernoRed/pokeswap-react/actions/workflows/mega-linter.yml/badge.svg?branch=main&event=push
+[megalint-workflow]:https://github.com/InfernoRed/pokeswap-react/actions/workflows/mega-linter.yml

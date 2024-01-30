@@ -8,6 +8,8 @@
     "build": "remix build",
     "dev": "remix dev --manual",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "megalint": "npx mega-linter-runner --flavor javascript --path .",
+    "megalintFix": "npm run megalint -- --fix",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
