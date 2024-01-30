@@ -1,11 +1,11 @@
 export const Language = {
-  English: "en",
-  Spanish: "es",
-} as const;
+  English: 'en',
+  Spanish: 'es'
+} as const
 
 export const Namespace = {
-  Common: "common",
-} as const;
+  Common: 'common'
+} as const
 
 export default {
   // This is the list of languages your application supports
@@ -16,5 +16,5 @@ export default {
   // The default namespace of i18next is "translation", but you can customize it here
   defaultNS: Namespace.Common,
   // Disabling suspense is recommended
-  react: { useSuspense: false },
-};
+  react: { useSuspense: false }
+}
