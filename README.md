@@ -1,12 +1,12 @@
 ![][pokeswap-logo]
 
-# Welcome to PokeSwap in React!
+# Welcome to PokeSwap in React
 
 A fun example of a localized application using the [Pokemon API][pokemon-api] to allow a user to compare prices of Pokemon Cards.
 
 ## 🧱 Architecture
 This applications uses the following stack
-- [React][react] 
+- [React][react]
 - [Remix][remix-docs]
 - [i18next]
 - [react-i18next]
@@ -38,7 +38,7 @@ npm start
 ```
 
 <!--LINKS-->
-[react]:https://react.dev/ 
+[react]:https://react.dev/
 [remix-docs]: https://remix.run/docs
 [i18next]:https://www.i18next.com/
 [react-i18next]:https://react.i18next.com/
