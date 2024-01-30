@@ -24,3 +24,8 @@ FILEIO_REPORTER: false
 
 # Uncomment if you want MegaLinter to detect errors but not block CI to pass
 # DISABLE_ERRORS: true
+
+PRE_COMMANDS:
+  # Preinstall React ESLint plugin
+  - command: npm install eslint-plugin-react --save-dev -g
+    cwd: "root"
