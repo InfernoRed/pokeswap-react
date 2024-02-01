@@ -16,7 +16,7 @@ import Backend from "i18next-fs-backend";
 import i18n from "./i18n"; // your i18n configuration file
 import { resolve } from "node:path";
 
-const ABORT_DELAY = 5000;
+const ABORT_DELAY = 10000; // Note: Optimized for API Calls
 
 export default async function handleRequest(
   request: Request,
