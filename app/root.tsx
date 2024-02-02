@@ -16,8 +16,11 @@ import { Namespace } from "./i18n";
 import { useChangeLanguage } from "remix-i18next";
 
 import stylesheet from "./tailwind.css";
+import pokedexStylesheet from "./pokedex.css";
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: pokedexStylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
