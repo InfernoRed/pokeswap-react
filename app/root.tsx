@@ -15,7 +15,9 @@ import { useTranslation } from "react-i18next";
 import { Namespace } from "./i18n";
 import { useChangeLanguage } from "remix-i18next";
 
+import stylesheet from "./tailwind.css";
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
